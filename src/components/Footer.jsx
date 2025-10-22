@@ -107,7 +107,7 @@ const Footer = () => {
             </li>
             <li className="flex items-start space-x-3">
               <FaEnvelope className="mt-0.5 text-yellow-400" />
-              <span>pratik@infinite.com</span>
+              <span>darkfoxx2621@gmail.com</span>
             </li>
           </ul>
         </div>
