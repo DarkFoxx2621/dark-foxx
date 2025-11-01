@@ -39,7 +39,7 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-semibold mb-2">Contact Details</h3>
               <p><span className="text-white">Address:</span> Offira Business Hub, VIP Road, Vesu, Surat, India</p>
-              <p><span className="text-white">Email:</span> pratik@infinite.com</p>
+              <p><span className="text-white">Email:</span> darkfoxx2621@gmail.com</p>
             </div>
 
             {/* Working Hours */}
