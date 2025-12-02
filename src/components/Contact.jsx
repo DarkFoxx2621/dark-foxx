@@ -14,12 +14,34 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you! Your message has been submitted.');
-    setFormData({ name: '', email: '', phone: '', message: '' });
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+const payload = {
+    name:formData.name,
+    email:formData.email,
+    phone:formData.phone,
+    message:formData.message
   };
+
+  await fetch("https://script.google.com/macros/s/AKfycbyZsdBKihuvE80j-70BzJbqy9Gd_GEuDmfyG02SBTkbdecVla-bae7wKHlcdok2rqL2Fg/exec", {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(payload)
+  });
+    setFormData({ name: '', email: '', phone: '', message: '' });
+
+  alert("Submitted!");
+};
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log('Form submitted:', formData);
+  //   alert('Thank you! Your message has been submitted.');
+  // };
 
   return (
     <div className="min-h-screen bg-gray-900 text-white py-20 px-4 md:px-10">
