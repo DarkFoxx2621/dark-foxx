@@ -66,7 +66,7 @@ const Navbar = () => {
                 >
                   {link.label}
                   {link.dropdown && <ChevronDown size={16} />}
-                  <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full" />
+                  <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-gradient-to-r from-gray-700 via-gray-850 to-gray-950 transition-all group-hover:w-full" />
                 </button>
 
                 {/* Dropdown */}
@@ -85,7 +85,7 @@ const Navbar = () => {
                           onClick={() => handleNavigation(item.to)}
                           className={`block w-full text-left px-4 py-2 text-sm transition ${
                             window.location.pathname === item.to
-                              ? "bg-blue-500 text-white"
+                              ? "bg-gradient-to-r from-gray-700 via-gray-850 to-gray-950 text-white"
                               : "text-gray-300 hover:text-white hover:bg-gray-800"
                           }`}
                         >
@@ -103,7 +103,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => handleNavigation("/contact")}
-              className="ml-4 px-5 py-2 rounded-full bg-blue-500 font-semibold hover:bg-blue-600 transition"
+              className="ml-4 px-5 py-2 rounded-full bg-gradient-to-r from-gray-800 to-gray-200 text-black font-semibold hover:bg-blue-600 transition"
             >
               Get In Touch
             </motion.button>
@@ -137,7 +137,7 @@ const Navbar = () => {
                     onClick={() => handleNavigation(link.to)}
                     className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition ${
                       window.location.pathname === link.to
-                        ? "bg-blue-500 text-white"
+                        ? "bg-gradient-to-r from-gray-700 via-gray-850 to-gray-950 text-white"
                         : "text-gray-300 hover:text-white hover:bg-gray-800"
                     }`}
                   >
@@ -153,7 +153,7 @@ const Navbar = () => {
                           onClick={() => handleNavigation(item.to)}
                           className={`block w-full text-left px-3 py-2 text-sm rounded-md transition ${
                             window.location.pathname === item.to
-                              ? "bg-blue-500 text-white"
+                              ? "bg-gradient-to-r from-gray-700 via-gray-850 to-gray-950 text-white"
                               : "text-gray-400 hover:text-white hover:bg-gray-800"
                           }`}
                         >
@@ -170,7 +170,7 @@ const Navbar = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => handleNavigation("/contact")}
-                className="mt-3 px-4 py-2 rounded-md bg-blue-500 text-white font-medium"
+                className="mt-3 px-4 py-2 rounded-md bg-gradient-to-r from-gray-800 to-gray-200 text-black font-medium"
               >
                 Get Started
               </motion.button>
