@@ -152,7 +152,8 @@ const payload = {
 
             <button
               type="submit"
-              className="bg-blue-700 text-white font-semibold p-4 rounded-lg hover:bg-blue-600 transition-all duration-300 w-full md:w-40 mt-4"
+              className="bg-gradient-to-r from-blue-700 via-blue-850 to-blue-950
+ text-white font-semibold p-4 rounded-lg hover:bg-blue-600 transition-all duration-300 w-full md:w-40 mt-4"
             >
               SEND MESSAGE
             </button>
